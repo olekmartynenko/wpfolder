@@ -1,0 +1,73 @@
+/*
+Theme Name: Twenty Nineteen Child
+Theme URI: wpfolder/wpcontent/themes/twentynineteen-child/
+Author: Oleksandr
+Description: Twenty Nineteen Child Theme
+Template: twentynineteen
+Version: 1.0
+Text Domain: twentynineteenchild
+*/
+body {
+    background: lightblue;
+}
+
+.main-navigation .main-menu>li>a,
+.main-navigation .main-menu>li {
+    color: black;
+}
+
+.menu-item:hover>button>svg {
+    transform: rotate(180deg);
+    color: #005177;
+}
+
+@keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+h1.entry-title {
+    animation: bounceInLeft 2s 1;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    border-radius: 20px;
+    max-width: 50%;
+    font-size: 20px;
+    background-color: hsl(202, 79%, 87%);
+    outline: none;
+}
+
+.wpcf7 textarea {
+    height: 100px;
+}
