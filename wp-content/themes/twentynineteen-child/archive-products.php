@@ -22,7 +22,7 @@ get_header();
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
-		<div class='circle'></div>
+		<h2>custom template for archive-products</h2>
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) :

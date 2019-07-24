@@ -27,10 +27,10 @@ get_header();
 				if ( comments_open() || get_comments_number() ) {
 					comments_template();
 				}
+				
 
 			endwhile; // End of the loop.
 			?>
-
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

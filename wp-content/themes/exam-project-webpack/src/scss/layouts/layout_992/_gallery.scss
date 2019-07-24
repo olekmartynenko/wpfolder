@@ -1,0 +1,81 @@
+.container-gallery {
+    padding: 0 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "fig1 fig1 fig2 fig3"
+        "fig1 fig1 fig4 fig4";
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        width: 30%;
+        height: 30%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gallery-box {
+    cursor: pointer;
+    overflow: hidden;
+
+    @include e(hoverblock) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        background: transparent;
+        height: calc(100% - 40px);
+        width: calc(100% - 40px);
+
+        .gallery-box:hover & {
+            animation: zoomIn 1s forwards;
+            background: $windowBackground;
+        }
+    }
+
+    @include e(i) {
+        transition: all 1s;
+        height: 100%;
+
+        .gallery-box:hover & {
+            transform: scale(1.2);
+        }
+    }
+
+    @include e(title) {
+        font-size: 48px;
+        line-height: 40px;
+        margin-bottom: 30px;
+
+        @include m(sm) {
+            font-size: 28px;
+        }
+    }
+
+    @include e(btn) {
+        visibility: hidden;
+
+        .gallery-box:hover & {
+            transition: all 5s ease-in;
+            visibility: visible;
+            animation: fadeIn 1s forwards;
+        }
+    }
+
+
+}

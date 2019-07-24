@@ -1,0 +1,87 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: July 18, 2019 11:56
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.18
+WORDPRESS:	5.2.2
+PHP INFO:	5.6.32 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (1536M default) 
+MEMORY STACK: 27MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:36 | filtered:0 | create:36
+FILTERED: []
+SQL CREATED: 20190718_internship_5cf8757e4b84dd035468_20190718115448_database.sql
+SQL FILE SIZE: 957.02KB (979987)
+SQL FILE TIME: 2019-07-18 11:56:02
+SQL RUNTIME: 0.98 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/OSPanel/domains/wpfolder
+ARCHIVE FILE: 20190718_internship_5cf8757e4b84dd035468_20190718115448_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	169.72MB
+STATS:	Dirs 768 | Files 6,285
+SQL ADDED: 20190718_internship_5cf8757e4b84dd035468_20190718115448_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 7053
+    [filename] => C:\OSPanel\domains\wpfolder\wp-snapshots\tmp\20190718_internship_5cf8757e4b84dd035468_20190718115448_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 7052
+[PHP ERR][NOTICE] MSG:ob_flush(): failed to flush buffer. No buffer to flush [CODE:8|FILE:C:\OSPanel\domains\wpfolder\wp-content\plugins\duplicator\classes\utilities\class.u.php|LINE:172]
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 82.79MB
+ARCHIVE RUNTIME: 40.88 sec.
+MEMORY STACK: 29.25MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/OSPanel/domains/wpfolder/wp-snapshots/tmp/20190718_internship_5cf8757e4b84dd035468_20190718115448_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 957.02KB
+INSTALLER FILE: 59.37KB
+ARCHIVE FILE: 84.13MB 
+EXPECTED FILE/DIRECTORY COUNT: 7,053
+ACTUAL FILE/DIRECTORY COUNT: 7,052
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 43.25 sec.
+PEAK PHP MEMORY USED: 32.25MB
+DONE PROCESSING => 20190718_internship July 18, 2019 11:56
+

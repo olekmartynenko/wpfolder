@@ -1,0 +1,10 @@
+.container-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "fig1 fig2"
+        "fig3 fig4"
+}
+
+.gallery-box {
+    margin: 0;
+}

@@ -1,0 +1,14 @@
+.slider-box {
+
+  @include e(title) {
+    font-size: 36px;
+  }
+
+  @include e(text) {
+    visibility: visible;
+    text-align: center;
+    font-size: 14px;
+    color: $white;
+    margin-bottom: 30px;
+  }
+}

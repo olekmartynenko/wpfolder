@@ -29,7 +29,7 @@ define( 'DB_NAME', 'wpfolder' );
 define( 'DB_USER', 'wpfolder' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'DFSFnOJHyZJyisj2' );
+define( 'DB_PASSWORD', 'admin' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

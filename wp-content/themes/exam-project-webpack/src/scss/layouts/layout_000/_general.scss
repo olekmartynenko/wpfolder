@@ -1,0 +1,32 @@
+html {
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+}
+
+body {
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.container_main {
+  flex: 1;
+}
+
+.container-top {
+  order: -1;
+}
+
+h2 {
+  font-size: rem(20px);
+  line-height: rem(12px);
+  font-weight: $mediumFontWeight;
+  color: #333b46;
+  text-transform: uppercase;
+}

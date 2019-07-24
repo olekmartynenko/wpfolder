@@ -1,0 +1,106 @@
+.navbar {
+    padding: 20px;
+    background-color: transparent;
+    z-index: 1;
+    justify-content: flex-start;
+    transition: all 1s;
+    position: absolute;
+
+    &:hover {
+        background: $headerHover;
+    }
+}
+
+.navbar a {
+    color: $menuLinks;
+    transition: color .2 ease-out;
+
+    &:hover {
+        color: $menuLinksHover;
+    }
+}
+
+.menu {
+    display: block;
+
+    @include e(item) {
+        display: inline-block;
+        padding: 30px 20px;
+        font-weight: bold;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            left: 25%;
+            height: 2px;
+            bottom: 20%;
+            transition: all .5s;
+        }
+
+        &:hover::before {
+            background: $black;
+            width: 50%;
+            left: 25%
+        }
+    }
+
+    @include e(sub) {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 105%;
+        width: 200px;
+        padding: 32px 0;
+        background: $headerHover;
+        transition: all 1s ease;
+        list-style: none;
+        margin: 0;
+
+        @include e(link) {
+            display: block;
+            padding: 8px 24px;
+
+        }
+    }
+}
+
+.menu>ul>li {
+    display: inline-block;
+}
+
+.has-submenu:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo {
+    margin-right: 50px;
+    order: -1;
+    transition: all .5s;
+
+    &:hover {
+        fill: $menuLinks;
+    }
+}
+
+.cart {
+    width: 40px;
+    fill: $menuLinks;
+    right: 0;
+    top: 35px;
+    transition: all .5s;
+
+    &:hover {
+        fill: $menuLinksHover;
+    }
+}
+
+.dark-overlay,
+.mobile-menu,
+.menu-button {
+    display: none;
+}

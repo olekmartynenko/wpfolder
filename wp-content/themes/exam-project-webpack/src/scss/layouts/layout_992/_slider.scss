@@ -1,0 +1,29 @@
+.slider {
+  margin-bottom: 40px;
+}
+
+.custom-dots {
+  cursor: pointer;
+}
+
+.slider-box {
+  @include e(caption) {
+    padding: 0 200px;
+  }
+
+  @include e(title) {
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 35px;
+  }
+
+
+  @include e(btn) {
+    transition: all 1s;
+
+    &:hover {
+      color: $black;
+      background-color: $white;
+    }
+  }
+}

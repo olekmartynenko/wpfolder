@@ -1,0 +1,77 @@
+.container-gallery {
+    max-width: 100%;
+    display: grid;
+    margin: 0 auto 50px;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+        "fig1"
+        "fig2"
+        "fig3"
+        "fig4";
+}
+
+.gallery-box {
+    position: relative;
+    margin: 10px;
+
+    @include m(one) {
+        grid-area: fig1;
+        height: 100%;
+    }
+
+    @include m(two) {
+        grid-area: fig2;
+        height: 100%;
+    }
+
+    @include m(three) {
+        grid-area: fig3;
+        height: 100%;
+    }
+
+    @include m(four) {
+        grid-area: fig4;
+        background-color: #A0C09B;
+    }
+
+    @include e(i) {
+        vertical-align: top;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @include e(title) {
+        font-size: rem(24px);
+        text-transform: capitalize;
+        color: $white;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    @include e(btn) {
+        font-size: rem(16px);
+        font-weight: $boldFontWeight;
+        color: $white;
+        position: relative;
+        padding-bottom: 5px;
+        text-decoration: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            background: $white;
+            bottom: 0;
+        }
+    }
+
+    @include e(caption) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+    }
+}

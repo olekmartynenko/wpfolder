@@ -1,0 +1,38 @@
+.newsletter {
+    margin-bottom: 50px;
+
+    @include e(title) {
+        margin-bottom: 30px;
+    }
+
+    @include e(text) {
+        margin-bottom: 50px;
+    }
+
+    @include e(f) {
+        flex-direction: row;
+    }
+
+    @include e(inp) {
+        margin: 30px 30px 0 0;
+
+        &:hover {
+            border-bottom: 1px solid $black;
+        }
+    }
+
+    @include e(btn) {
+        padding: 20px 20px 10px;
+
+        &:hover {
+            border-bottom: 1px solid $black;
+        }
+    }
+}
+
+.error_email {
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    font-size: 12px;
+}

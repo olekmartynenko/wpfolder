@@ -1,0 +1,66 @@
+footer {
+    background: $footer;
+    padding: 60px 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include e(logo) {
+        margin: auto;
+        margin-bottom: 30px;
+        fill: $white;
+    }
+
+    @include e(menu) {
+        margin-bottom: 20px;
+
+        a {
+            color: $menuColor;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    }
+
+    @include e(content) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include e (social) {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    @include e(content) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.social__item {
+    background: url(../i/sprite.svg) no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    @include m(fb) {
+        background-position: 0 -30px;
+        margin-right: 0;
+    }
+
+    @include m(inst) {
+        background-position: 0 -60px;
+    }
+
+    @include m(pin) {
+        background-position: 0 -90px;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,46 @@
+.footer {
+    @include e(logo) {
+        transition: all .5s;
+
+        &:hover {
+            fill: $selectGray;
+        }
+    }
+
+    @include e(menu) {
+        a {
+            &:hover {
+                color: $menuLinksHover;
+            }
+        }
+    }
+}
+
+.social__item {
+    @include m(tw) {
+        &:hover {
+            background-position: 0 -15px;
+        }
+    }
+
+    @include m(fb) {
+
+        &:hover {
+            background-position: 0 -45px;
+        }
+    }
+
+    @include m(inst) {
+
+        &:hover {
+            background-position: 0 -75px;
+        }
+    }
+
+    @include m(pin) {
+
+        &:hover {
+            background-position: 0 -105px;
+        }
+    }
+}

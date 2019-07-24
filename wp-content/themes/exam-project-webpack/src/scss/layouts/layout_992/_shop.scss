@@ -1,0 +1,76 @@
+.products {
+    padding: 0 62px;
+}
+
+.i-hover {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    transition: opacity 600ms,
+        visibility 600ms;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-box {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include e(i) {
+        margin-bottom: 20px;
+
+        &:hover>img {
+            opacity: 0;
+            transition: all .6s ease;
+        }
+
+        &:hover>.i-hover {
+            display: inline;
+            visibility: visible;
+            opacity: 1;
+            animation: fade 1s;
+        }
+    }
+
+    @include e(btn) {
+        visibility: hidden;
+        bottom: 90px;
+        opacity: 0;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $btnHover;
+        }
+
+        .product-box__i:hover & {
+            visibility: visible;
+            bottom: 100px;
+            opacity: 1;
+            display: block;
+        }
+    }
+}
+
+.confirm-window__f {
+    >button {
+
+        transition: all .3s;
+
+        &:hover {
+            background-color: $btnHover;
+        }
+    }
+
+}
